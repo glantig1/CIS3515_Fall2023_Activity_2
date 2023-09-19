@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
             override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
                 p1?.run{
                     val number = (this as TextView).text.toString()
-                    displayTextView.setText(number)
+                    displayTextView.setTextSize(number.toFloat())
                 }
             }
 
